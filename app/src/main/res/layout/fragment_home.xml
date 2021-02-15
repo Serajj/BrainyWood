@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.sharad.brainywood.HomeFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="-9dp"
+                android:layout_marginTop="-60dp"
+                android:layout_marginEnd="-9dp"
+                android:background="@color/WhiteLowOpc50"
+                app:cardBackgroundColor="@color/WhiteLowOpc30"
+                app:cardCornerRadius="55dp"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="OpenProfile">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/clouds" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="160dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <androidx.cardview.widget.CardView
+
+                                    android:id="@+id/iconUser"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="40dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    app:cardCornerRadius="25dp">
+
+                                    <ImageView
+                                        android:id="@+id/studentProfileImage"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/user" />
+
+                                </androidx.cardview.widget.CardView>
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geo_sans_light"
+                                        android:gravity="start"
+                                        android:text="Hello, "
+                                        android:textColor="@color/Gray"
+                                        android:textSize="24sp"
+                                        android:textStyle="" />
+
+                                    <TextView
+
+                                        android:id="@+id/userName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/geo_sans_light"
+                                        android:gravity="start"
+                                        android:text="-"
+                                        android:textColor="@color/Gray"
+                                        android:textSize="20sp"
+                                        android:textStyle="bold" />
+
+
+                                </LinearLayout>
+
+
+                                <TextView
+
+                                    android:id="@+id/userEmail"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="0dp"
+                                    android:fontFamily="@font/open_sans_regular"
+                                    android:gravity="start"
+                                    android:text="-"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="15sp"
+                                    android:textStyle="" />
+
+                                <TextView
+                                    android:id="@+id/studentNumber"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/open_sans_regular"
+                                    android:gravity="start"
+                                    android:text="+923473647030"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="14sp"
+                                    android:textStyle=""
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/White" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+
+                    android:visibility="gone"
+                    android:id="@+id/verifyEmailCard"
+                    android:onClick="OpenProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:padding="5dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="30dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/zm_emailnotmatch" />
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/open_sans_regular"
+                                android:gravity="start"
+                                android:paddingEnd="0dp"
+                                android:text="Please Verify Your Email From Profile"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="15sp"
+                                android:textStyle="" />
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1.7"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/home_dash_low" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="7dp"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:gravity="start"
+                            android:paddingEnd="20dp"
+                            android:text="BEST MEMORY TRAINING INSTITUTION IN INDIA"
+                            android:textColor="@color/green"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxima_nova"
+                            android:gravity="start"
+                            android:justificationMode="inter_word"
+                            android:paddingEnd="10dp"
+                            android:text="Brainywood works for spreading awareness of reforms in current education methodology as well as study process."
+                            android:textColor="@color/Gray"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/enrolled_courses_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/geo_sans_light"
+                    android:gravity="start"
+                    android:text="Courses You Enrolled-In"
+                    android:textColor="@color/Gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLoading"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:id="@+id/animation_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="loading.json"
+                            app:lottie_loop="true" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/proxima_nova"
+                            android:gravity="center"
+                            android:text="Please wait for your personalised content to load"
+                            android:textColor="@color/Gray"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/enrolProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="80dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/courseEnrolRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:onClick="ShareClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="120dp"
+                                android:layout_marginStart="@dimen/zm_ui_kit_text_size_10sp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/share_app_low" />
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginBottom="2dp"
+                                android:fontFamily="@font/open_sans_regular"
+                                android:gravity="start"
+                                android:paddingEnd="0dp"
+                                android:text="Share app with your friends"
+                                android:textColor="@color/Black80"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="0dp"
+                                    android:fontFamily="@font/proxima_nova"
+                                    android:gravity="start"
+                                    android:justificationMode="inter_word"
+                                    android:paddingEnd="0dp"
+                                    android:text="BrainyWood is a beautiful gift, share with friends"
+                                    android:textColor="@color/Gray"
+                                    android:textSize="15sp" />
+
+
+                                <ImageView
+                                    android:padding="5dp"
+                                    android:layout_weight="3"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/sharing" />
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/geo_sans_light"
+                    android:gravity="start"
+                    android:text="Most Popular Memory Courses"
+                    android:textColor="@color/Gray"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/allcoursesProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="80dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/courseRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

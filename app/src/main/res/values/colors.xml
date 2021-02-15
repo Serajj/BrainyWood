@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f5f5f5</color>
+    <color name="colorPrimaryDark">#C6C6C6</color>
+    <color name="colorAccent">#2c97ff</color>
+    <color name="colorAccentLight">#4AA6FF</color>
+
+
+
+    <color name="backgroundBlue">#000D1B</color>
+    <color name="backgroundBlueLight">#001730</color>
+
+
+
+
+
+
+    <color name="Black">#111111</color>
+    <color name="Black80">#CC111111</color>
+    <color name="Black65">#A6111111</color>
+    <color name="Black50">#80111111</color>
+    <color name="Black30">#4D111111</color>
+    <color name="Black10">#1A111111</color>
+    <color name="Gray">#292929</color>
+    <color name="BlackLighter">#CD363636</color>
+
+    <color name="gray">#453C3C3C</color>
+    <color name="gray50">#803C3C3C</color>
+    <color name="grayTransparent">#C9292929</color>
+    <color name="grayMiddle50">#0D000000</color>
+
+    <color name="White">#FFFFFF</color>
+    <color name="WhiteLowOpc90">#E6FFFFFF</color>
+    <color name="WhiteLowOpc80">#CCFFFFFF</color>
+    <color name="WhiteLowOpc70">#B2FFFFFF</color>
+    <color name="WhiteLowOpc50">#4DFFFFFF</color>
+    <color name="WhiteLowOpc30">#33FFFFFF</color>
+    <color name="WhiteLowOpc10">#1AFFFFFF</color>
+
+    <color name="Transparent">#00FFFFFF</color>
+
+
+    <color name="test">#F3866C</color>
+
+
+
+
+
+    //color for gradients
+
+
+
+    <color name="brown">#785549</color>
+    <color name="brownLighter">#8F7267</color>
+
+    <color name="redglow">#F87A7A</color>
+    <color name="red">#f2453d</color>
+    <color name="redLighter">#F06A63</color>
+
+    <color name="orangeDark">#fc5830</color>
+    <color name="orangeDarkLighter">#FF7D5E</color>
+    <color name="orangeDarkLighter25">#40FF7D5E</color>
+
+    <color name="orangeYellow">#fd9727</color>
+    <color name="orangeYellow25">#40FD9727</color>
+    <color name="orangeYellowLighter">#FFAE55</color>
+
+    <color name="yellow">#fdc02f</color>
+    <color name="yellow25">#40FDC02F</color>
+    <color name="yellowLighter">#FFD674</color>
+
+    <color name="greenYellow">#cddb49</color>
+    <color name="greenYellow25">#40CDDB49</color>
+    <color name="greenYellowLighter">#E1F075</color>
+
+    <color name="greenGlow">#2ECA36</color>
+    <color name="green">#50ae54</color>
+    <color name="green25">#4050AE54</color>
+    <color name="greenLighter">#89C78C</color>
+
+    <color name="skyblue">#2c98f0</color>
+    <color name="skyblue25">#402C98F0</color>
+    <color name="skyblueLight">#80BAFA</color>
+
+    <color name="blue">#154785</color>
+    <color name="bluedark">#0E3361</color>
+
+
+    <color name="bluePure">#4054b2</color>
+    <color name="bluePureLighter">#6B7BC2</color>
+
+    <color name="purple">#9a30ae</color>
+    <color name="purple25">#409A30AE</color>
+    <color name="purpleLighter">#BC5DCC</color>
+
+    <color name="pink">#e72564</color>
+    <color name="pink25">#40E72564</color>
+    <color name="pinkLighter">#F75F91</color>
+
+
+
+</resources>

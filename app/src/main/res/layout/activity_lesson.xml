@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LessonActivity">
+
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:elevation="20dp"
+        android:onClick="Close"
+        android:padding="7dp"
+        android:src="@drawable/ic_back_black" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/progressLayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+
+
+                    android:id="@+id/lesson_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/geo_sans_light"
+                    android:gravity="start"
+                    android:shadowColor="@color/Black30"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="4"
+                    android:text="Title "
+                    android:textColor="@color/Gray"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="0dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+
+                        android:id="@+id/course_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/proxima_nova"
+                        android:gravity="center"
+                        android:text="BRAIN SCIENCE CONCEPT VIDEOS - FREE"
+                        android:textColor="@color/Gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/Black50" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1.5"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="25dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/skyblue"
+                            android:fontFamily="@font/proxima_nova"
+                            android:gravity="center"
+                            android:text="IN PROGRESS"
+                            android:textColor="@color/White"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/videoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/yellow"
+                    app:cardBackgroundColor="@color/yellow"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pureblue_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/thumbnail"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:background="@color/Black65"
+                                android:scaleType="centerCrop" />
+
+
+                            <ImageView
+                                android:id="@+id/playButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:background="@color/Black50"
+                                android:onClick="PlayVideo"
+                                android:padding="60dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_play" />
+
+                            <ImageView
+                                android:id="@+id/downloadButton"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentEnd="true"
+                                android:onClick="DownloadVideo"
+                                android:padding="15dp"
+                                android:src="@drawable/ic_download" />
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/geo_sans_light"
+                            android:gravity="center_vertical"
+                            android:paddingStart="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="10dp"
+                            android:text="Fundamentals of Brain Science"
+                            android:textColor="@color/White"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/geo_sans_light"
+                            android:gravity="center_vertical"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:text="https://vimeo.com/video/462061589/"
+                            android:textColor="@color/White"
+                            android:textSize="18sp"
+                            android:textStyle=""
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/yellow"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/yellow"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/yellow_bg"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:background="@color/Black65"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/videos2" />
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:background="@color/Black30"
+                                android:padding="20dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/ic_play" />
+
+
+                        </RelativeLayout>
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/geo_sans_light"
+                            android:gravity="center_vertical"
+                            android:paddingStart="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="8dp"
+                            android:text="Dummy Data"
+                            android:textColor="@color/White"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/lesson_description"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/proxima_nova"
+                android:gravity="start"
+                android:justificationMode="inter_word"
+                android:shadowColor="@color/Black30"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="description"
+                android:textColor="@color/Gray"
+                android:textSize="20sp"
+                android:textStyle="" />
+
+            <androidx.cardview.widget.CardView
+                android:onClick="OpenQuizFromLesson"
+                android:visibility="gone"
+                android:id="@+id/cardQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/blue_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="@dimen/zm_ui_kit_text_size_10sp"
+                            android:padding="7dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/quizz" />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:gravity="start"
+                        android:paddingEnd="0dp"
+                        android:text="Let's do a quick quiz"
+                        android:textColor="@color/WhiteLowOpc80"
+                        android:textSize="18sp"
+                        android:textStyle="" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/green_stock_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="3dp"
+                            android:fontFamily="@font/open_sans_regular"
+                            android:gravity="start"
+                            android:paddingEnd="0dp"
+                            android:text="Goto Quiz  >"
+                            android:textColor="@color/White"
+                            android:textSize="19sp"
+                            android:textStyle="" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="0dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/geo_sans_light"
+                                android:gravity="start"
+                                android:justificationMode="inter_word"
+                                android:paddingEnd="0dp"
+                                android:text="BrainyWood is a beautiful gift, share with friends"
+                                android:textColor="@color/Gray"
+                                android:textSize="16sp" />
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="3"
+                                android:padding="5dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/sharing"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:onClick="FinishLesson"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/greenGlow"
+                android:fontFamily="@font/geo_sans_light"
+                android:gravity="center"
+                android:text="Finish "
+                android:textColor="@color/White"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:onClick="NextLesson"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/skyblue"
+                android:fontFamily="@font/geo_sans_light"
+                android:gravity="center"
+                android:text="Next"
+                android:textColor="@color/White"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

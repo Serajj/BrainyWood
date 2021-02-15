@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/logoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/text_logo"
+                android:layout_width="300dp"
+                android:layout_height="70dp"/>
+
+
+            <TextView
+                android:layout_above="@+id/logoImage"
+                android:fontFamily="@font/geo_sans_light"
+                android:visibility="visible"
+                android:gravity="center"
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to "
+                android:textSize="28dp"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/effectImage"
+                android:layout_marginTop="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-170dp"
+                android:layout_width="500dp"
+                android:layout_height="500dp"/>
+
+        </RelativeLayout>
+
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/splash_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:progress="50"
+            android:indeterminateDrawable="@drawable/custom_progress_bar"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

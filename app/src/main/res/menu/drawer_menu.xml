@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    <group
+        android:id="@+id/id10"
+        android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_new"
+            android:icon="@drawable/ic_send"
+            android:title="New Email">
+
+        </item>
+
+    </group>
+
+
+-->
+
+    <group
+        android:id="@+id/id1"
+        android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile">
+
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/id2"
+        android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/ic_quiz_book_white"
+            android:title="Quizzes">
+
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/id3"
+        android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_leader"
+            android:icon="@drawable/trophy"
+            android:title="Leadership Board">
+
+        </item>
+
+    </group>
+
+    <group
+
+        android:id="@+id/id9"
+        android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/rating"
+            android:title="Rate Us">
+
+        </item>
+
+    </group>
+
+    <group
+
+        android:id="@+id/id10"
+        android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_share"
+            android:icon="@drawable/sharing"
+            android:title="Share App">
+
+        </item>
+
+    </group>
+
+    <group
+
+        android:id="@+id/id4"
+        android:checkableBehavior="single">
+
+        <item
+
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="Contact Us">
+
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/id8"
+        android:checkableBehavior="single">
+
+        <item
+            android:icon="@drawable/ic_about"
+
+            android:id="@+id/nav_about"
+            android:title="About">
+
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/id6"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout">
+
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/id7"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="Exit" />
+
+    </group>
+
+    <group
+        android:id="@+id/id5"
+        android:checkableBehavior="single">
+
+
+
+        <item
+
+            android:id="@+id/nav_terms"
+            android:title="Terms &amp; Conditions">
+
+        </item>
+
+        <item
+
+            android:id="@+id/nav_privacy"
+            android:title="Privacy Policy">
+
+        </item>
+
+
+        <item
+
+            android:id="@+id/nav_refund"
+            android:title="Refund Policy">
+
+        </item>
+
+    </group>
+
+<!--
+    <group
+
+        android:id="@+id/id11"
+        android:checkableBehavior="single">
+
+
+
+    </group>
+
+    <group
+
+        android:id="@+id/id12"
+        android:checkableBehavior="single">
+
+
+
+    </group>
+
+    <group
+
+        android:id="@+id/id13"
+        android:checkableBehavior="single">
+
+
+    </group>
+-->
+
+
+
+
+
+</menu>

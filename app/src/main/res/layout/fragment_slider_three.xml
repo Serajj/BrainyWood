@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.sharad.brainywood.SliderThreeFragment">
+
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/slider_three" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_centerVertical="true"
+            android:id="@+id/PrevousButtonUp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="-10dp"
+            android:background="@drawable/ic_arrow_left" />
+
+        <Button
+            android:layout_centerVertical="true"
+
+            android:id="@+id/NextButtonUp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-10dp"
+            android:background="@drawable/ic_arrow_right" />
+
+        <TextView
+            android:padding="10dp"
+
+            android:id="@+id/prevoiusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/geo_sans_light"
+            android:text="Previous"
+            android:textColor="@color/Gray"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:padding="10dp"
+
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/geo_sans_light"
+            android:gravity="end"
+            android:text="Next"
+            android:textColor="@color/Gray"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
